@@ -33,16 +33,19 @@
 `git remote ------查看已经配置的远程服务器,列出你指定的每一个远程服务器的简写`  
 `git remote v ------显示需要读写的远程仓库使用的Git保存的简写和对应的URL`  
 `git remote show [remote-name]------查看远程分支的的更多信息`  
-`git remote rename new-remote-name old-remote-name ------远程仓库的重命名`  
+`git remote rename new-remote-name old-remote-name ------远程仓库的重命名` 
 `git remote rm remote-name/branch-name------移除远程仓库`  
 `git clone [-o remote-name] <url> ------克隆分支`  
 `git remote add <shortname> <url> ------添加一个新的远程仓库到当前项目,仓库简写为shortname`  
 `git fetch [remote-name] ------从服务器抓取本地没有的数据，并且更新本地数据库，不会合并`  
-`git fetch --all------拉取所有分支`  
-`git pull------合并远程分支到当前分支`
-`git push [remote-name] [branch-name] ------推送到远程仓库`  
-`git checkout --track remote-name/branch-name ------创建远程跟踪分支的本地跟踪分支`  
-`git checkout -b branch-name remote-name/branch-name ------创建远程跟踪分支的本地跟踪分支`  
-`git branch -u [remote-name/branch-name]------设置当前分支为远程跟踪分支的的本地跟踪分支`
+`git fetch --all------拉取所有远程仓库`  
+`git pull------合并远程分支到当前分支` 
+`git push [remote-name] [branch-name] ------将当前分支的内容推送到远程仓库的分支上`  
+`git push [remote-name] [local-branch-name]:[branch-name]------在远程仓库创建新的分支（前提是本地分支已经存在)`   
+`git branch -u [remote-name/branch-name]------设置当前分支为远程跟踪分支的的本地跟踪分支`  
+`git checkout --track remote-name/branch-name ------创建远程跟踪分支的本地同名remote-name/branch-name跟踪分支`  
+`git checkout -b branch-name remote-name/branch-name ------创建远程跟踪分支的本地跟踪分支(前提是远程分支已经存在)  
+
 `git branch -vv ------查看设置的所有本地跟踪分支，会列出所有的本地分支并且包含更多的信息`  
 `git push remote-name --delete branch-name ------删除远程服务器上的分支`  
+
