@@ -52,7 +52,7 @@
 
 `git remote show [remote-name]------查看远程分支的的更多信息`  
 
-`git remote rename new-remote-name old-remote-name ------远程仓库的重命名` 
+`git remote rename old-remote-name new-remote-name ------远程仓库的重命名` 
 
 `git remote rm remote-name/branch-name------移除远程仓库`  
 
