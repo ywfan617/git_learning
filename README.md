@@ -87,4 +87,6 @@
 	+ test分支
 	+ develop分支
 	+ hotfix分支
-
+## 华为实践
+`git push -f --------强制推送，将自己本地仓库的代码直接推送至仓库，完全以你的提交为准，之前其他人的提交都会被覆盖。[https://199508.com/post/2164]`
+`git commit --amend ------对之前的commit 提交进行修改https://zhuanlan.zhihu.com/p/100243017`
